@@ -1,0 +1,20 @@
+it's not a real readme
+it's just a dummy readme to stop github complaints about not having real README
+
+technically:
+
+sinatra
+wardern
+mongoid
+
+rack-test
+
+compass + blueprint
+haml + sass (I don't like scss that much)
+lots of css3 and html5 wizardry
+
+jquery
+backbone
+
+heroku + sendgrid
+
