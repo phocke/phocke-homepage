@@ -534,79 +534,166 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 24, sass/screen.sass */
+/* line 38, sass/screen.sass */
 body .container h1, body .container h2, body .container h3 {
   font-family: Helvetica, Arial, Sans-Serif;
   color: white;
   text-shadow: 1px 2px 8px rgba(200, 200, 200, 0.8);
 }
-/* line 28, sass/screen.sass */
+/* line 42, sass/screen.sass */
 body .container h1 {
   font-size: 60px;
 }
-/* line 30, sass/screen.sass */
+/* line 44, sass/screen.sass */
 body .container h2 {
   font-size: 40px;
 }
-/* line 32, sass/screen.sass */
+/* line 46, sass/screen.sass */
 body .container h3 {
   font-size: 25px;
 }
-/* line 34, sass/screen.sass */
+/* line 48, sass/screen.sass */
 body header, body footer, body #main {
   width: 100%;
 }
-/* line 36, sass/screen.sass */
+/* line 50, sass/screen.sass */
 body header {
   background: url("./img/bg-header.gif");
+  background: white;
+  background-image: url("./img/bg-header.gif");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-header.gif");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-header.gif");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-header.gif");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-header.gif");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-header.gif");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-header.gif");
 }
-/* line 39, sass/screen.sass */
+/* line 33, sass/screen.sass */
 body header .container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  height: 500px;
 }
-/* line 41, sass/screen.sass */
-body #main {
+/* line 56, sass/screen.sass */
+body #projects {
   background: url("./img/bg-body.gif");
+  background: white;
+  background-image: url("./img/bg-body.gif");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-body.gif");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-body.gif");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-body.gif");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-body.gif");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-body.gif");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-body.gif");
 }
-/* line 43, sass/screen.sass */
-body #main .container {
+/* line 33, sass/screen.sass */
+body #projects .container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  height: 500px;
 }
-/* line 45, sass/screen.sass */
-body #main .container h1 {
+/* line 58, sass/screen.sass */
+body #projects h1 {
   border-right: 2px dashed white;
   width: 450px;
   letter-spacing: -3px;
   padding-bottom: 5px;
   float: left;
 }
-/* line 51, sass/screen.sass */
-body #main .container h3 {
+/* line 64, sass/screen.sass */
+body #projects h3 {
   width: 350px;
   float: left;
   margin: 10px;
   margin-top: 2px;
 }
-/* line 56, sass/screen.sass */
-body footer {
-  background: url("./img/bg-footer.png");
+/* line 69, sass/screen.sass */
+body #skills {
+  background: url("./img/bg-noise.png");
+  background: white;
+  background-image: url("./img/bg-noise.png");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-noise.png");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-noise.png");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-noise.png");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-noise.png");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-noise.png");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-noise.png");
 }
-/* line 58, sass/screen.sass */
+/* line 33, sass/screen.sass */
+body #skills .container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 500px;
+}
+/* line 71, sass/screen.sass */
+body #personal {
+  background: url("./img/bg-personal.gif");
+  background: white;
+  background-image: url("./img/bg-personal.gif");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-personal.gif");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-personal.gif");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-personal.gif");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-personal.gif");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-personal.gif");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-personal.gif");
+}
+/* line 33, sass/screen.sass */
+body #personal .container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 500px;
+}
+/* line 73, sass/screen.sass */
+body #photography {
+  background: url("./img/bg-photography.jpg");
+  background: white;
+  background-image: url("./img/bg-photography.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-photography.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-photography.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-photography.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-photography.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-photography.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-photography.jpg");
+}
+/* line 33, sass/screen.sass */
+body #photography .container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 500px;
+}
+/* line 75, sass/screen.sass */
+body footer {
+  background: url("./img/bg-footer.jpg");
+  background: white;
+  background-image: url("./img/bg-footer.jpg");
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-footer.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.01)), color-stop(100%, rgba(0, 0, 0, 0.2))), url("./img/bg-footer.jpg");
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-footer.jpg");
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-footer.jpg");
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-footer.jpg");
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 48%, rgba(0, 0, 0, 0.2) 100%), url("./img/bg-footer.jpg");
+  padding: 0;
+}
+/* line 33, sass/screen.sass */
 body footer .container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  padding: 0;
+  height: 500px;
 }
-/* line 61, sass/screen.sass */
-body footer .container section {
+/* line 78, sass/screen.sass */
+body footer section {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -615,11 +702,11 @@ body footer .container section {
   border-right: 1px dashed rgba(200, 200, 200, 0.8);
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body footer .container section {
+* html body footer section {
   overflow-x: hidden;
 }
-/* line 66, sass/screen.sass */
-body footer .container section.last {
+/* line 83, sass/screen.sass */
+body footer section.last {
   display: inline;
   float: left;
   margin-right: 0;
@@ -628,6 +715,6 @@ body footer .container section.last {
   border: 0;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body footer .container section.last {
+* html body footer section.last {
   overflow-x: hidden;
 }
