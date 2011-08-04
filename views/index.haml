@@ -21,36 +21,41 @@
 
     %script{:src => "js/libs/modernizr-2.0.min.js"}
     %script{:src => "js/libs/respond.min.js"}
-  %body.blueprint
-    #container
-      %header
+  %body
+    %header
+      .container
         %ul
           %li about me
           %li blog
           %li projects
           %li photos
-      #main{:role => "main"}
-        %h1 siemanko??!!
-      %footer
-        %ul
-          %li 
-            %a{:href=>"#"} about me
-          %li 
-            %a{:href=>"#"} blog
-          %li 
-            %a{:href=>"#"} cv
-          %li 
-            %a{:href=>"#"} github
-          %li 
-            %a{:href=>"#"} contact
-          %li 
-            %a{:href=>"#"} content
-          %li 
-            %a{:href=>"#"} past
-          %li 
-            %a{:href=>"#"} present
-          %li 
-            %a{:href=>"#"} future
+    #main{:role => "main"}
+      .container
+        %h1 Przemek Hocke
+        %h3 Ruby on Rails developer
+        %h3 All around web geek
+    %footer
+      .container
+        %section
+          Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        %section
+          Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        %section.last
+          %form.bp{:method=>'post', :action=>'send-email'}
+            %label{:for => 'sender-name'}
+            %input#sender-name{:type => 'text', :placeholder => 'Hi! Nice to meet you', :name => 'sender-name'}/
+            %label{:for => 'sender-email'}
+            %input#sender-email{:type => 'text', :placeholder => "What's your email address", :name => 'sender-email'}/
+            %label{:for => 'sender-message'}
+            %textarea#sender-message{:type => 'text', :rows => '10', :cols => '40', :placeholder => 'Hi! Nice to meet you', :name => 'sender-message'}
+            %label{:for => 'sender-message'}
+            %input{:type => 'submit', :value => 'send'}/
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')    / scripts concatenated and minified via ant build script

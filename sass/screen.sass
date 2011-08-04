@@ -13,21 +13,68 @@
 @import partials/two_col
 @import "blueprint/fancy-type"
 
+//variables are defined here
+
+$whiteish : rgba(200,200,200,0.8)
+$white : white
+
+
 body
-  #container
-    +container 
-    header
-    #main
+  .container
+    h1,h2,h3
+      font-family: Helvetica,Arial,Sans-Serif
+      color: $white
+      text-shadow: 1px 2px 8px $whiteish
+    h1
+      font-size: 60px
+    h2
+      font-size: 40px
+    h3
+      font-size: 25px
+  header, footer, #main 
+    width: 100%
+  header
+    //padding: 20px
+    background: url('./img/bg-header.gif')
+    .container
+      +container 
+  #main
+    background: url('./img/bg-body.gif')
+    .container
+      +container 
       h1
-        color: #ff0000
-    footer
-      ul
-        height: 100px
-        text-align: justify
-        -moz-column-count: 3
-        -moz-column-width: 15em
-        -moz-column-gap: 2em
-        -moz-column-rule: 1px dashed #c4c8cc
-        -webkit-column-width: 15em
-        -webkit-column-gap: 2em
-        -webkit-column-rule: 1px dashed #c4c8cc
+        border-right: 2px dashed $white
+        width: 450px
+        letter-spacing: -3px
+        padding-bottom: 5px
+        float: left
+      h3
+        width: 350px
+        float: left
+        margin: 10px
+        margin-top: 2px
+  footer
+    background: url('./img/bg-footer.png')
+    .container
+      +container 
+      padding: 0
+      section
+        //padding: 10px
+        +column(8)
+        width: 309px
+        border-right: 1px dashed $whiteish
+      section.last
+        +column(8, true)
+        width: 309px
+        border: 0
+      //ul
+        //height: 100px
+        //text-align: justify
+        //-moz-column-count: 3
+        //-moz-column-width: 31%
+        //-moz-column-gap: 2%
+        //-moz-column-rule: 1px dashed #c4c8cc
+        //-moz-column-count: 3
+        //-webkit-column-width: 31%
+        //-webkit-column-gap: 2%
+      //-webkit-column-rule: 1px dashed #c4c8cc
