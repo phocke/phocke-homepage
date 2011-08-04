@@ -13,4 +13,9 @@ class HomePage < Sinatra::Base
   get '/hi' do
     "Hello World!"
   end
+
+  post '/send-email' do
+    puts params.inspect
+    #redirect_to "/"
+  end
 end
