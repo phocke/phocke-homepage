@@ -49,36 +49,35 @@ $gray-lighter: #fefefe
 $gray-dark: #555
 
 $whiteish: rgba(255,255,255,0.7)
-$grayish: rgba(10,10,10,0.6)
+$grayish: rgba(10,10,10,0.7)
 $white: white
 
 
+$violet-moderate: rgba(107,86,210,0.3)
 
-
+$violet-moderate-opaque: rgba(107,86,210,1)
 
 body
   .container
+    padding: 20px
+    color: $gray-dark
     font-family: Marvel
     font-size: 2.4em
-    color: $gray-dark
     strong
       font-family: Kreon
     h1,h2,h3
       font-family: Marvel,Helvetica,Arial,Sans-Serif
       color: $gray-light
       text-shadow: 1px 2px 5px $whiteish
-      //-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200,200,200,0.9)), to(rgba(200,200,200,0.8)))
-      //text-shadow: 0 2px 0 #e9e9e9
-      //-webkit-transition: all .3s
-      //-moz-transition: all .3s
-      //transition: all .3s
+      -webkit-transition: all .3s
+      -moz-transition: all .3s
+      transition: all .3s
     
     h1:hover, h2:hover, h3:hover
-      //color: $gray-lighter
-      //-webkit-mask-image: none
-      //-webkit-transition: all .3s
-      //-moz-transition: all .3s
-      //transition: all .3s
+      color: $gray-lighter
+      -webkit-transition: all .3s
+      -moz-transition: all .3s
+      transition: all .3s
     h1
       font-size: 60px
     h2
@@ -107,53 +106,55 @@ body
       z-index: 10
 
   header, footer, #projects, #photography, #skills, #personal
-    width: 100%
     border-bottom: 1px solid black
     box-shadow-bottom: 0 0 20px red
     box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset, 0 -12px 12px rgba(200,200,200,0.18) inset, 0 0 300px rgba(0,0,0,1) inset
-  //footer, #projects
-    //box-shadow: 0 -12px 12px rgba(0,0,0,0.5) inset, 0 5px 12px rgba(200,200,200,0.18) inset
-  //header
-    //box-shadow: 0 -12px 12px rgba(0,0,0,0.5) inset, 0 5px 100px white inset
+    width: 100%
+  #footer, #projects
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset,  0 0 300px $violet-moderate  inset
+    h1,h2,h3
+      text-shadow: 1px 1px 7px $violet-moderate-opaque
+      color: lighten($violet-moderate-opaque, 32%)
+    h1:hover,h2:hover,h3:hover
+      -webkit-transition: all .3s
+      -moz-transition: all .3s
+      transition: all .3s
+      color: lighten($violet-moderate-opaque, 90%)
   header
     +wide-background('./img/bg-header.gif')
     background-position: 4px 0
     h1
       margin-top: 30px
     ol
+      background-color: rgba(255,255,255,0.3)
       list-style-type: none
+      margin-left: 30px
+      margin-top: 47px
       vertical-align: bottom
       width: 898px
-      margin-top: 47px
-      margin-left: 30px
-      background-color: rgba(255,255,255,0.3)
       li
+        height: 60px
+        line-height: 60px
+        padding-left: 15px
         position: relative
         top: -14px
-        padding-left: 15px
-        line-height: 60px
-        height: 60px
-        //text-align: center
-        //border: 1px solid red
       li:last-child
         height: 59px
-      //li:first-child
-        //height: 30px
 
   #projects
     +wide-background('./img/bg-body.gif')
     #tagline
       h1
         border-right: 2px dashed $white
-        width: 450px
+        float: left
         letter-spacing: -3px
         padding-bottom: 5px
-        float: left
+        width: 450px
       h3
-        width: 350px
         float: left
-        margin: 10px
         margin-top: 2px
+        margin: 10px
+        width: 350px
   #skills
     +wide-background('./img/bg-noise.png')
   #personal
@@ -164,22 +165,10 @@ body
     +wide-background('./img/bg-footer.jpg')
     padding: 0
     section
-      //padding: 10px
       +column(8)
-      width: 309px
       border-right: 1px dashed $whiteish
+      width: 309px
     section.last
       +column(8, true)
-      width: 309px
       border: 0
-    //ul
-      //height: 100px
-      //text-align: justify
-      //-moz-column-count: 3
-      //-moz-column-width: 31%
-      //-moz-column-gap: 2%
-      //-moz-column-rule: 1px dashed #c4c8cc
-      //-moz-column-count: 3
-      //-webkit-column-width: 31%
-      //-webkit-column-gap: 2%
-    //-webkit-column-rule: 1px dashed #c4c8cc
+      width: 309px
