@@ -177,10 +177,10 @@ body header, body footer, body #projects, body #photography, body #skills, body 
   border-bottom: 1px solid black;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5) inset, 0 0 300px black inset;
   width: 100%; }
-body #footer h1, body #footer h2, body #footer h3, body #projects h1, body #projects h2, body #projects h3 {
+body #footer h1, body #footer h2, body #footer h3, body #projects h1, body #projects h2, body #projects h3, body #skills h1, body #skills h2, body #skills h3 {
   text-shadow: 1px 1px 3px #ff677d;
   color: #3ac7ff; }
-body #footer h1:hover, body #footer h2:hover, body #footer h3:hover, body #projects h1:hover, body #projects h2:hover, body #projects h3:hover {
+body #footer h1:hover, body #footer h2:hover, body #footer h3:hover, body #projects h1:hover, body #projects h2:hover, body #projects h3:hover, body #skills h1:hover, body #skills h2:hover, body #skills h3:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -191,8 +191,9 @@ body #skills {
     font-family: Marvel, Helvetica, Arial, Sans-Serif;
     color: #ff3452;
     text-shadow: 1px 1px 2px #eeeeee; }
-  body #skills h2, body #skills h3 {
-    color: #cccccc; }
+  body #skills dl h2, body #skills dl h3 {
+    color: #dedede;
+    text-shadow: 1px 1px 1px #53ceff; }
 body header {
   background: white;
   background-image: url("./img/bg-header.gif");
@@ -250,10 +251,10 @@ body #skills {
     overflow: hidden;
     *zoom: 1;
     min-height: 1000px; }
-body #personal {
+body #achievements {
   background: white;
   background-image: url("./img/bg-personal.gif"); }
-  body #personal .container {
+  body #achievements .container {
     width: 950px;
     margin: 0 auto;
     overflow: hidden;

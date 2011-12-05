@@ -104,7 +104,7 @@ body
     box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset, 0 0 300px rgba(0,0,0,1) inset
     width: 100%
 
-  #footer, #projects
+  #footer, #projects, #skills
     h1,h2,h3
       text-shadow: 1px 1px 3px lighten($pink-dark, 10%)
       color: lighten(saturate($blue-bright, 10%), 5%)
@@ -119,8 +119,10 @@ body
       font-family: Marvel,Helvetica,Arial,Sans-Serif
       color: $pink-dark
       text-shadow: 1px 1px 2px #eee
-    h2,h3
-      color: #ccc
+    dl
+      h2,h3
+        color: #dedede
+        text-shadow: 1px 1px 1px lighten($blue-bright, 10%)
   header
     +wide-background('./img/bg-header.gif')
     background-position: 12px 21px
@@ -159,7 +161,7 @@ body
         width: 350px
   #skills
     +wide-background('./img/dark-grey.png')
-  #personal
+  #achievements
     +wide-background('./img/bg-personal.gif')
   #photography
     +wide-background('./img/bg-photography.jpg')
