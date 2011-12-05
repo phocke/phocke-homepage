@@ -1,12 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster|Kreon:700|Josefin+Sans:400,400italic|Carme|Lobster+Two:400,700,700italic|Rochester|Nova+Square|Marvel:400,700|Gloria+Hallelujah&subset=latin,latin-ext);
-/* line 4, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   margin: 0;
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
-/* line 18, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 .bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
 div, span, object, iframe, p,
 pre, a, abbr, acronym, address,
@@ -21,406 +18,281 @@ caption, tbody, tfoot, thead, tr {
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 20, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
-/* line 21, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote, q {
-  quotes: "" "";
-}
-/* line 67, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-}
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
 
-/* line 22, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 th, td, caption {
   float: none !important;
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 23, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 24, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 a img {
-  border: none;
-}
+  border: none; }
 
-/* line 18, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
-  font-weight: bold;
-}
-/* line 19, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  font-weight: bold; }
 form.bp fieldset {
   padding: 1.4em;
-  margin: 0 0 1.5em 0;
-}
-/* line 20, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  margin: 0 0 1.5em 0; }
 form.bp legend {
   font-weight: bold;
-  font-size: 1.2em;
-}
-/* line 26, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  font-size: 1.2em; }
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
   margin: 0.5em 0;
   background-color: white;
-  padding: 5px;
-}
-/* line 27, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  padding: 5px; }
 form.bp input.title {
-  font-size: 1.5em;
-}
-/* line 29, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  font-size: 1.5em; }
 form.bp textarea {
   margin: 0.5em 0;
-  padding: 5px;
-}
-/* line 30, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  padding: 5px; }
 form.bp select {
-  margin: 0.5em 0;
-}
-/* line 55, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  margin: 0.5em 0; }
 form.bp fieldset {
-  border: 1px solid #cccccc;
-}
-/* line 58, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  border: 1px solid #cccccc; }
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password],
 form.bp textarea {
   background-color: #fff;
-  border: 1px solid #bbbbbb;
-}
-/* line 61, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus,
-form.bp textarea:focus {
-  border-color: #666666;
-}
-/* line 65, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  border: 1px solid #bbbbbb; }
+  form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus,
+  form.bp textarea:focus {
+    border-color: #666666; }
 form.bp select {
   background-color: #fff;
   border-width: 1px;
-  border-style: solid;
-}
-/* line 44, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  border-style: solid; }
 form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
-  width: 300px;
-}
-/* line 46, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+  width: 300px; }
 form.bp textarea {
   width: 390px;
-  height: 250px;
-}
+  height: 250px; }
 
-/* line 2, /Users/przemek/projects/phocke-homepage/sass/partials/_buttons.sass */
 section .container {
   /* WHILE HOVERED */
   /* WHILE BEING CLICKED */
-  /* FONT GLYPH (MOSTLY FOR FUN) */
-}
-/* line 3, /Users/przemek/projects/phocke-homepage/sass/partials/_buttons.sass */
-section .container a.button {
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: Lobster, helvetica, arial;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  position: relative;
-  /* BACKGROUND GRADIENTS */
-  background: #014464;
-  background: -moz-linear-gradient(top, #0d658e, #0c577a 50%, #014d71 51%, #003e5c);
-  background: -webkit-linear-gradient(top, #0d658e, #0c577a 50%, #014d71 51%, #003e5c);
-  background: -webkit-gradient(linear, left top, left bottombottom, color-stop(0, #0e658e), color-stop(0.5, #0c577a), color-stop(0.5, #014d71), to(#003e5c));
-  /* BORDER RADIUS */
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 1px solid #368dbe;
-  border-top: 1px solid #c3d6df;
-  /* TEXT SHADOW */
-  text-shadow: 1px 1px 1px black;
-  /* BOX SHADOW */
-  -moz-box-shadow: 0 1px 3px black;
-  -webkit-box-shadow: 0 1px 3px black;
-  box-shadow: 0 1px 3px black;
-}
-/* line 41, /Users/przemek/projects/phocke-homepage/sass/partials/_buttons.sass */
-section .container a.button:hover {
-  background: #014464;
-  background: -moz-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
-  background: -webkit-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(0.5, #0b5273), color-stop(0.51, #024869), to(#003853));
-}
-/* line 49, /Users/przemek/projects/phocke-homepage/sass/partials/_buttons.sass */
-section .container a.button:active {
-  -moz-box-shadow: 0 2px 6px black;
-  -webkit-box-shadow: 0 2px 6px black;
-}
-/* line 54, /Users/przemek/projects/phocke-homepage/sass/partials/_buttons.sass */
-section .container a.button:before {
-  font-family: Lobster;
-  content: "+";
-  color: #09232f;
-  font-size: 50px;
-  float: left;
-  margin-left: 15px;
-  margin-top: -3px;
-  margin-right: -10px;
-  text-shadow: 0 1px 0 #4190af;
-}
+  /* FONT GLYPH (MOSTLY FOR FUN) */ }
+  section .container a.button {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Lobster, helvetica, arial;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    position: relative;
+    /* BACKGROUND GRADIENTS */
+    background: #014464;
+    background: -moz-linear-gradient(top, #0d658e, #0c577a 50%, #014d71 51%, #003e5c);
+    background: -webkit-linear-gradient(top, #0d658e, #0c577a 50%, #014d71 51%, #003e5c);
+    background: -webkit-gradient(linear, left top, left bottombottom, color-stop(0, #0e658e), color-stop(0.5, #0c577a), color-stop(0.5, #014d71), to(#003e5c));
+    /* BORDER RADIUS */
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #368dbe;
+    border-top: 1px solid #c3d6df;
+    /* TEXT SHADOW */
+    text-shadow: 1px 1px 1px black;
+    /* BOX SHADOW */
+    -moz-box-shadow: 0 1px 3px black;
+    -webkit-box-shadow: 0 1px 3px black;
+    box-shadow: 0 1px 3px black; }
+  section .container a.button:hover {
+    background: #014464;
+    background: -moz-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
+    background: -webkit-linear-gradient(top, #0c5f85, #0b5273 50%, #024869 51%, #003853);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0c5f85), color-stop(0.5, #0b5273), color-stop(0.51, #024869), to(#003853)); }
+  section .container a.button:active {
+    -moz-box-shadow: 0 2px 6px black;
+    -webkit-box-shadow: 0 2px 6px black; }
+  section .container a.button:before {
+    font-family: Lobster;
+    content: "+";
+    color: #09232f;
+    font-size: 50px;
+    float: left;
+    margin-left: 15px;
+    margin-top: -3px;
+    margin-right: -10px;
+    text-shadow: 0 1px 0 #4190af; }
 
-/* line 61, sass/screen.sass */
 body .container {
   padding: 20px;
   color: #555555;
   font-family: Marvel;
-  font-size: 2.4em;
-}
-/* line 66, sass/screen.sass */
-body .container strong {
-  font-family: Kreon;
-}
-/* line 68, sass/screen.sass */
-body .container h1, body .container h2, body .container h3 {
-  font-family: Marvel, Helvetica, Arial, Sans-Serif;
-  color: #eeeeee;
-  text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.7);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 76, sass/screen.sass */
-body .container h1:hover, body .container h2:hover, body .container h3:hover {
-  color: #fefefe;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 81, sass/screen.sass */
-body .container h1 {
-  font-size: 60px;
-}
-/* line 83, sass/screen.sass */
-body .container h2 {
-  font-size: 40px;
-}
-/* line 85, sass/screen.sass */
-body .container h3 {
-  font-size: 25px;
-}
-/* line 88, sass/screen.sass */
-body .container .cursive {
-  font-family: Lobster, cursive;
-}
-/* line 91, sass/screen.sass */
-body .container .bold {
-  font-family: Kreon, Helvetica, Arial, sans-serif;
-}
-/* line 94, sass/screen.sass */
-body .container .hand {
-  font-family: Rochester, Georgia, serif;
-}
-/* line 97, sass/screen.sass */
-body .container .dark {
-  color: #555555;
-  text-shadow: 1px 2px 5px rgba(10, 10, 10, 0.7);
-}
-/* line 101, sass/screen.sass */
-body .container .pink {
-  color: #ff3452;
-  text-shadow: 1px 2px 5px #0099cc;
-}
-/* line 105, sass/screen.sass */
-body .container .title {
-  z-index: 10;
-}
-/* line 108, sass/screen.sass */
+  font-size: 2.4em; }
+  body .container strong {
+    font-family: Kreon; }
+  body .container h1, body .container h2, body .container h3 {
+    font-family: Kreon, Helvetica, Arial, Sans-Serif;
+    color: #eeeeee;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.7);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  body .container h1:hover, body .container h2:hover, body .container h3:hover {
+    color: #fefefe;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  body .container h1 {
+    font-size: 60px; }
+  body .container h2 {
+    font-size: 40px; }
+  body .container h3 {
+    font-size: 25px; }
+  body .container a {
+    text-decoration: none; }
+  body .container .cursive {
+    font-family: Lobster, cursive; }
+  body .container .bold {
+    font-family: Kreon, Helvetica, Arial, sans-serif; }
+  body .container .hand {
+    font-family: Rochester, Georgia, serif; }
+  body .container .dark {
+    color: #555555;
+    text-shadow: 1px 2px 5px rgba(10, 10, 10, 0.7); }
+  body .container .pink {
+    color: #ff3452;
+    text-shadow: 1px 2px 5px #0099cc; }
+  body .container .title {
+    z-index: 10; }
 body header, body footer, body #projects, body #photography, body #skills, body #personal {
   border-bottom: 1px solid black;
-  box-shadow-bottom: 0 0 20px red;
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5) inset, 0 -12px 12px rgba(200, 200, 200, 0.18) inset, 0 0 300px black inset;
-  width: 100%;
-}
-/* line 113, sass/screen.sass */
-body #footer, body #projects {
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5) inset, 0 0 300px rgba(107, 86, 210, 0.3) inset;
-}
-/* line 115, sass/screen.sass */
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5) inset, 0 0 300px black inset;
+  width: 100%; }
 body #footer h1, body #footer h2, body #footer h3, body #projects h1, body #projects h2, body #projects h3 {
-  text-shadow: 1px 1px 7px #6b56d2;
-  color: #dcd7f4;
-}
-/* line 118, sass/screen.sass */
+  text-shadow: 1px 1px 3px #ff677d;
+  color: #3ac7ff; }
 body #footer h1:hover, body #footer h2:hover, body #footer h3:hover, body #projects h1:hover, body #projects h2:hover, body #projects h3:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
-}
-/* line 123, sass/screen.sass */
+  color: white; }
+body #skills {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.65) inset, 0 -10px 20px rgba(0, 0, 0, 0.65) inset, 0 0 300px black inset; }
+  body #skills h1 {
+    font-family: Marvel, Helvetica, Arial, Sans-Serif;
+    color: #ff3452;
+    text-shadow: 1px 1px 2px #eeeeee; }
+  body #skills h2, body #skills h3 {
+    color: #cccccc; }
 body header {
-  background: url("./img/bg-header.gif");
   background: white;
   background-image: url("./img/bg-header.gif");
-  background-position: 4px 0;
-}
-/* line 11, sass/partials/_wide_background.sass */
-body header .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 126, sass/screen.sass */
-body header h1 {
-  margin-top: 30px;
-}
-/* line 128, sass/screen.sass */
-body header ol {
-  background-color: rgba(255, 255, 255, 0.3);
-  list-style-type: none;
-  margin-left: 30px;
-  margin-top: 47px;
-  vertical-align: bottom;
-  width: 898px;
-}
-/* line 135, sass/screen.sass */
-body header ol li {
-  height: 60px;
-  line-height: 60px;
-  padding-left: 15px;
-  position: relative;
-  top: -14px;
-}
-/* line 141, sass/screen.sass */
-body header ol li:last-child {
-  height: 59px;
-}
-/* line 144, sass/screen.sass */
+  background-position: 12px 21px; }
+  body header .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
+  body header h1 {
+    margin-top: 30px; }
+  body header ol {
+    background-color: rgba(255, 255, 255, 0.3);
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 47px;
+    padding-top: 30px;
+    vertical-align: bottom;
+    width: 898px; }
+    body header ol li {
+      height: 60px;
+      line-height: 60px;
+      padding-left: 15px;
+      position: relative;
+      top: -14px; }
+    body header ol li:last-child {
+      height: 59px; }
 body #projects {
-  background: url("./img/bg-body.gif");
   background: white;
-  background-image: url("./img/bg-body.gif");
-}
-/* line 11, sass/partials/_wide_background.sass */
-body #projects .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 147, sass/screen.sass */
-body #projects #tagline h1 {
-  border-right: 2px dashed white;
-  float: left;
-  letter-spacing: -3px;
-  padding-bottom: 5px;
-  width: 450px;
-}
-/* line 153, sass/screen.sass */
-body #projects #tagline h3 {
-  float: left;
-  margin-top: 2px;
-  margin: 10px;
-  width: 350px;
-}
-/* line 158, sass/screen.sass */
+  background-image: url("./img/bg-noise.png"); }
+  body #projects .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
+  body #projects #tagline h1 {
+    border-right: 2px dashed white;
+    float: left;
+    letter-spacing: -3px;
+    padding-bottom: 5px;
+    width: 450px; }
+  body #projects #tagline h3 {
+    float: left;
+    margin-top: 2px;
+    margin: 10px;
+    width: 350px; }
 body #skills {
-  background: url("./img/bg-noise.png");
   background: white;
-  background-image: url("./img/bg-noise.png");
-}
-/* line 11, sass/partials/_wide_background.sass */
-body #skills .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 160, sass/screen.sass */
+  background-image: url("./img/dark-grey.png"); }
+  body #skills .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
 body #personal {
-  background: url("./img/bg-personal.gif");
   background: white;
-  background-image: url("./img/bg-personal.gif");
-}
-/* line 11, sass/partials/_wide_background.sass */
-body #personal .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 162, sass/screen.sass */
+  background-image: url("./img/bg-personal.gif"); }
+  body #personal .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
 body #photography {
-  background: url("./img/bg-photography.jpg");
   background: white;
-  background-image: url("./img/bg-photography.jpg");
-}
-/* line 11, sass/partials/_wide_background.sass */
-body #photography .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 164, sass/screen.sass */
+  background-image: url("./img/bg-photography.jpg"); }
+  body #photography .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
 body footer {
-  background: url("./img/bg-footer.jpg");
   background: white;
   background-image: url("./img/bg-footer.jpg");
-  padding: 0;
-}
-/* line 11, sass/partials/_wide_background.sass */
-body footer .container {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-  min-height: 1000px;
-}
-/* line 167, sass/screen.sass */
-body footer section {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px;
-  border-right: 1px dashed rgba(255, 255, 255, 0.7);
-  width: 309px;
-}
-/* line 147, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body footer section {
-  overflow-x: hidden;
-}
-/* line 171, sass/screen.sass */
-body footer section.last {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 310px;
-  border: 0;
-  width: 309px;
-}
-/* line 147, /Users/przemek/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body footer section.last {
-  overflow-x: hidden;
-}
+  padding: 0; }
+  body footer .container {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    min-height: 1000px; }
+  body footer section {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 310px;
+    border-right: 1px dashed rgba(255, 255, 255, 0.7);
+    width: 309px; }
+    * html body footer section {
+      overflow-x: hidden; }
+  body footer section.last {
+    display: inline;
+    float: left;
+    margin-right: 0;
+    width: 310px;
+    border: 0;
+    width: 309px; }
+    * html body footer section.last {
+      overflow-x: hidden; }

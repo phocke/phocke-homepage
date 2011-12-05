@@ -1,15 +1,6 @@
 //fonts
 
 
-//font-family: 'Lobster', cursive;
-//font-family: 'Kreon', serif;
-//font-family: 'Josefin Sans', sans-serif;
-//font-family: 'Carme', sans-serif;
-//font-family: 'Lobster Two', cursive;
-//font-family: 'Nova Square', cursive;
-//font-family: 'Gloria Hallelujah', cursive;
-//font-family: 'Rochester', cursive;
-
 @import url(http://fonts.googleapis.com/css?family=Lobster|Kreon:700|Josefin+Sans:400,400italic|Carme|Lobster+Two:400,700,700italic|Rochester|Nova+Square|Marvel:400,700|Gloria+Hallelujah&subset=latin,latin-ext)
 
 
@@ -66,7 +57,7 @@ body
     strong
       font-family: Kreon
     h1,h2,h3
-      font-family: Marvel,Helvetica,Arial,Sans-Serif
+      font-family: Kreon,Helvetica,Arial,Sans-Serif
       color: $gray-light
       text-shadow: 1px 2px 5px $whiteish
       -webkit-transition: all .3s
@@ -84,7 +75,10 @@ body
       font-size: 40px
     h3
       font-size: 25px
-    
+
+
+    a 
+      text-decoration: none
     .cursive
       font-family: Lobster, cursive
     
@@ -107,22 +101,29 @@ body
 
   header, footer, #projects, #photography, #skills, #personal
     border-bottom: 1px solid black
-    box-shadow-bottom: 0 0 20px red
-    box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset, 0 -12px 12px rgba(200,200,200,0.18) inset, 0 0 300px rgba(0,0,0,1) inset
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset, 0 0 300px rgba(0,0,0,1) inset
     width: 100%
+
   #footer, #projects
-    box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset,  0 0 300px $violet-moderate  inset
     h1,h2,h3
-      text-shadow: 1px 1px 7px $violet-moderate-opaque
-      color: lighten($violet-moderate-opaque, 32%)
+      text-shadow: 1px 1px 3px lighten($pink-dark, 10%)
+      color: lighten(saturate($blue-bright, 10%), 5%)
     h1:hover,h2:hover,h3:hover
       -webkit-transition: all .3s
       -moz-transition: all .3s
       transition: all .3s
       color: lighten($violet-moderate-opaque, 90%)
+  #skills
+    box-shadow: 0 10px 20px rgba(0,0,0,0.65) inset, 0 -10px 20px rgba(0,0,0,0.65) inset, 0 0 300px rgba(0,0,0,1) inset
+    h1
+      font-family: Marvel,Helvetica,Arial,Sans-Serif
+      color: $pink-dark
+      text-shadow: 1px 1px 2px #eee
+    h2,h3
+      color: #ccc
   header
     +wide-background('./img/bg-header.gif')
-    background-position: 4px 0
+    background-position: 12px 21px
     h1
       margin-top: 30px
     ol
@@ -130,6 +131,7 @@ body
       list-style-type: none
       margin-left: 30px
       margin-top: 47px
+      padding-top: 30px
       vertical-align: bottom
       width: 898px
       li
@@ -142,7 +144,7 @@ body
         height: 59px
 
   #projects
-    +wide-background('./img/bg-body.gif')
+    +wide-background('./img/bg-noise.png')
     #tagline
       h1
         border-right: 2px dashed $white
@@ -156,7 +158,7 @@ body
         margin: 10px
         width: 350px
   #skills
-    +wide-background('./img/bg-noise.png')
+    +wide-background('./img/dark-grey.png')
   #personal
     +wide-background('./img/bg-personal.gif')
   #photography
