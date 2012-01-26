@@ -28,8 +28,9 @@
           %li Make yourself at home please.
           %li And tell me please what you're looking for?
           %li Would like like to know about <a href="#projects"><strong>amazing projects</strong></a> I did?
-          %li Or maybe you'd rather read about <strong>my skills</strong>?
-          %li <strong>My photos</strong> are here. We both know life is not all about coding...
+          %li Or maybe you'd rather read about <a href="#skills"><strong>my skills</strong></a>?
+          %li Also - <a href="#achievements"><strong>my greatest achievements</strong></a>.
+    
     %section#projects
       .container
 
@@ -38,6 +39,7 @@
         %dl
           %dt <a href="http://www.ekstraklasa.ifmsa.pl" target="_blank"><h2>Ekstraklasa IFMSA football league</h2></a>
           %dd Starting on your geeky road, at some point you need to decide whether you're going to be a designer or a coder. Until you make up your mind, it means you do the job both. Being a Linux supporter means you're not using photoshop, but GIMP. Also knowing only some basic HTML from your high school IT classes, means you need to learn jQuery and it's UI components. I love win-win situations - they have a working website(still the same one), and I've learned a LOT.
+       
         %dl
           %dt <a href="http://www.marr.pl" target="_blank"><h2>MARR</h2></a>
           %dd The first commercial project I've worked on. Thanks for the chance. Great opportunity to slowly get to grips with back end development, which means Ruby on Rails. I loved it even more than jQuery ...
@@ -52,15 +54,15 @@
 
         %dl
           %dt <a href="http://github.com/phocke/vim-files" target="_blank"><h2>vim files</h2></a>
-          %dd After using textmate, gedit, redcar, netbeans, bluefish and nano you realize that each one of them has something cool that any of the others doesn't offer. So what would you do if you'd want all the cool features and then some in one place? That's right - you start using vim, then you find the coolest vim configuration on the earth, and then you add features to it, customize it, and even work on porting the coolest text editor theme you've ever seen(textmate's cobalt)
+          %dd After using textmate, gedit, redcar, netbeans, bluefish and nano you realize that each one of them can do some nice things that none of the others can. So what would you do if you'd want all the cool features and then some in one place? That's right - you'd start using vim, then you'd find the coolest vim configuration on the earth, and then you'd add more features to it, customize it, and even work on porting the coolest text editor theme you've ever seen(textmate's cobalt)
         
         %dl
           %dt <a href="http://github.com/phocke/vim-files" target="_blank"><h2>macVim files</h2></a>
-          %dd So coming back to mac from linux you realize that textMate is not the ultimate text editor. But you like having native support for some extravagant functionalities like copying and pasting using only command + (v or c or x). What do you do in this case? Well ... you port and debug your old vimfiles :)
+          %dd So coming back to mac from linux you realize that textMate is not the ultimate text editor. But you like having native support for some extravagant functionalities like copying and pasting using only command + (v or c or x). What do you do in this case? Well ... you port and debug your old vimfiles ...
         
         %dl
           %dt <a href="http://phocke.pl" target="_blank"><h2>phocke.pl (old)</h2></a>
-          %dd Being in need of some cool looking website for like yesterday means you skip all the chatter and you just find something that's cool and easy to set-up. For example creative commons personal website template. Although pink colour doesn't communicate professionalism all that well. So you change color scheme, populate the site with some real word data, and after two hours you're up and running. At least that's what you hope for. And you could be right, unless you decided to give a try to some hosting solutions which uses Jurassic period user interface. But anyway. It was fast enough
+          %dd Being in need of some cool looking website for like yesterday means you skip all the chatter and you just find something that's cool and easy to set-up. For example creative commons personal website template. Although pink colour doesn't communicate professionalism all that well. So you change color scheme, populate the site with some real word data, and after two hours you're up and running. At least that's what you hope for. And you could be right, unless you decided to give a try to some hosting solutions from hell. But anyway - it was fast enough.
 
         %dl
           %dt <a href="http://web.3.0.phocke.pl" target="_blank"><h2>phocke.pl</h2></a>
@@ -76,11 +78,23 @@
 
         %dl
           %dt <a href="http://protectthehuman.org" target="_blank"><h2>Protect the human</h2></a>(with new-bamboo)
-          %dd Lots of traffic, nice people, word changing stuff. The only missing ingredient is beautiful codebase. One of the most legacy projects I've ever worked on. Helped with developing my patience ;)  
+          %dd Lots of traffic, nice people, world changing stuff. The only missing ingredient is beautiful codebase. One of the most legacy projects I've ever worked on. Helped with developing my patience ;)  
 
     %section#skills
       .container
-        %h1.dark.title My skills and how I rate them:
+        %h1.dark.title My skills and how do I rate them:
+        
+        %ul#bar
+          -['Ruby', 'RubyOnRails', 'HTML5', 'CSS3', 'JavaScript', 'jQuery&UI', 'Admin'].each do |skill|
+            %li{:id => skill}
+              .top
+                %img{:src => "img/icons/#{skill}.png", }
+              .bottom
+                .infobox
+                  %h3=skill
+                  %p=rand(100)
+
+
         %dl
           %dt
             %h3.dark Ruby
@@ -103,7 +117,7 @@
           %dd.three
 
           %dt
-            %h3.dark Javascript
+            %h3.dark JavaScript
           %dd.three
 
           %dt
@@ -123,10 +137,6 @@
           %dd.five
             
           %dt
-            %h3.dark Coffee scipt
-          %dd.three
-            
-          %dt
             %h3.dark Linux / Unix fu 
           %dd.four
             
@@ -137,9 +147,16 @@
           %dt 
             %h3.dark Amazon web services
           %dd.three
+
+              / finally started using calendar      
+              / helping seba to do his thing
+              / month in munich                     
+              / learning decent snowboard in one day
+              / first air certificate
+              / graduating with 4.0 from V lo
+              / creating my hight school presenation
+              / convincing hp to fix my laptop      
           
-
-
 
     %section#achievements
       .container
