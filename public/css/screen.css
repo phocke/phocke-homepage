@@ -185,13 +185,12 @@ body #footer h1:hover, body #footer h2:hover, body #footer h3:hover, body #proje
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   color: white; }
-body #footer h1, body #projects h1, body #skills h1 {
+body #projects h1, body #achievements h1 {
   margin: 20px 0; }
-body #footer h2, body #projects h2, body #skills h2 {
-  padding: 0 5px;
-  color: #00ace6; }
-body #footer .description, body #projects .description, body #skills .description {
-  padding: 15px;
+body #projects h2, body #achievements h2 {
+  padding: 0 10px; }
+body #projects .description, body #achievements .description {
+  padding: 20px;
   font-size: 0.7em; }
 body #skills {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.65) inset, 0 -10px 20px rgba(0, 0, 0, 0.65) inset, 0 0 300px black inset; }
