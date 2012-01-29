@@ -63,7 +63,6 @@ body
       -webkit-transition: all .3s
       -moz-transition: all .3s
       transition: all .3s
-    
     h1:hover, h2:hover, h3:hover
       color: $gray-lighter
       -webkit-transition: all .3s
@@ -77,25 +76,20 @@ body
       font-size: 25px
 
 
-    a 
+    a
       text-decoration: none
     .cursive
       font-family: Lobster, cursive
-    
     .bold
       font-family: Kreon, Helvetica, Arial, sans-serif
-    
     .hand
       font-family: Rochester, Georgia, serif
-    
     .dark
       color: $gray-dark
       text-shadow: 1px 2px 5px $grayish
-    
     .pink
       color: $pink-dark
       text-shadow: 1px 2px 5px $blue-moderate
-    
     .title
       z-index: 10
 
@@ -107,12 +101,20 @@ body
   #footer, #projects, #skills
     h1,h2,h3
       text-shadow: 1px 1px 3px lighten($pink-dark, 10%)
-      color: lighten(saturate($blue-bright, 10%), 5%)
+      color: lighten(saturate($blue-navy, 10%), 5%)
     h1:hover,h2:hover,h3:hover
       -webkit-transition: all .3s
       -moz-transition: all .3s
       transition: all .3s
       color: lighten($violet-moderate-opaque, 90%)
+    h1
+      margin: 20px 0
+    h2
+      padding: 0 5px
+      color: lighten(saturate($blue-moderate, 10%), 5%)
+    .description
+      padding: 15px
+      font-size: .7em
   #skills
     box-shadow: 0 10px 20px rgba(0,0,0,0.65) inset, 0 -10px 20px rgba(0,0,0,0.65) inset, 0 0 300px rgba(0,0,0,1) inset
     h1
@@ -161,74 +163,83 @@ body
         width: 350px
   #skills
     +wide-background('./img/dark-grey.png')
- 
-    #bar  
-      list-style: none 
-      margin: 70px 0 0 200px 
-      width: 400px 
-      li  
-        margin-top:-40px 
-        &:first-child
-          div.top  
-            background-color: rgba(186,211,215,0.5) 
 
-        &:last-child 
-          div.bottom  
-            -moz-box-shadow: 0 10px 10px hsla(0,0%,0%,.2) 
-            -webkit-box-shadow: 0 100px 30px hsla(0,0%,0%,.2) 
-            box-shadow: 0 100px 30px hsla(0,0%,0%,.2) 
+    #bar
+      list-style: none
+      margin: 70px 0 0 200px
+      width: 400px
+      li
+        margin-top: -40px
+        &:first-child
+          div.top
+            background-color: rgba(186,211,215,0.5)
+
+        &:last-child
+          div.bottom
+            -moz-box-shadow: 0 10px 10px hsla(0,0%,0%,.2)
+            -webkit-box-shadow: 0 100px 30px hsla(0,0%,0%,.2)
+            box-shadow: 0 100px 30px hsla(0,0%,0%,.2)
 
         .top  
-          background-color: rgba(140,172,176,0.5) 
+          background-color: rgba(140,172,176,0.5)
           position: relative
-          width: 100px 
-          height: 40px 
+          width: 100px
+          height: 40px
           -moz-border-radius: 100px/40px
           -webkit-border-radius: 100px 40px
-          border-radius: 100px/40px 
-          
-          img  
-            margin-left: 18px 
-            margin-top: -32px 
-            display: none 
+          border-radius: 100px/40px
 
-        .bottom  
-          background-color: rgba(184,203,205,0.5) 
-          margin-top: -40px 
+          img
+            margin-left: 18px
+            margin-top: -32px
+            display: none
+
+        .bottom
+          background-color: rgba(184,203,205,0.5)
+          margin-top: -40px
           position: relative
-          width: 100px 
+          width: 100px
           -moz-border-radius: 100px/40px
           -webkit-border-radius: 100px 40px
-          border-radius: 100px/40px 
-          
-          .infobox  
-            padding: 40px 0 0 200px 
-            h3  
-              font-family: Georgia,serif,Times 
-            p  
-              font-family: "Lucida Grande",Arial,Helvetica,Sans-Serif 
+          border-radius: 100px/40px
 
-        &:hover 
-          .top 
-            img  
-              display: inline 
-          .bottom 
-            .infobox  
-              color: #eee 
+          .infobox
+            padding: 40px 0 0 200px
+            h3
+              font-family: Georgia,serif,Times
+            p
+              font-family: "Lucida Grande",Arial,Helvetica,Sans-Serif
+
+        &:hover
+          .top
+            img
+              display: inline
+          .bottom
+            .infobox
+              color: #eee
               text-shadow: 0px 5px 5px #111
-        
-        / #iphone div.top { z-index:99; }
-        / #iphone div.bottom { z-index:98; height:150px; }
-        / #iphone:hover div.top { z-index:999; background-color:#1f81ac; }
-        / #iphone:hover div.bottom { z-index:998; background-color:#1a6c90;
-        /   background:-moz-linear-gradient(-90deg, #1a6c90, #14506b); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b)); }
 
-        
-        / #macbook div.top { z-index:97; }
-        / #macbook div.bottom { z-index:96; height:200px; }
-        / #macbook:hover div.top { z-index:997; background-color:#bc003c; }
-        / #macbook:hover div.bottom { z-index:996; background-color:#9d0032;
-        /   background:-moz-linear-gradient(-90deg, #9d0032, #7a0027); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#9d0032), to(#7a0027)); }
+      #Ruby
+        .top
+          z-index: 99
+        .bottom
+          z-index: 98
+          height: 300px
+        &:hover
+          .top
+            z-index: 999
+            background-color: #1f81ac
+          .bottom
+            z-index: 998
+            background-color: #1a6c90
+            background: -moz-linear-gradient(-90deg, #1a6c90, #14506b)
+            background: -webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b))
+
+        /// #macbook div.top { z-index:97; }
+        /// #macbook div.bottom { z-index:96; height:200px; }
+        /// #macbook:hover div.top { z-index:997; background-color:#bc003c; }
+        /// #macbook:hover div.bottom { z-index:996; background-color:#9d0032;
+        ///   background:-moz-linear-gradient(-90deg, #9d0032, #7a0027); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#9d0032), to(#7a0027)); }
 
 
   #achievements
