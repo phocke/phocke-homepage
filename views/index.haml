@@ -75,16 +75,15 @@
     %section#skills
       .container
         %h1.dark.title My skills and how do I rate them:
+        
+        #legend
+          -(1..9).each do |rating|
+            %div{:class => "karate_#{rating}"}=rating
+          #explaination Inspired by karate belts
 
-        %ul#bar
-          -['Ruby', 'RubyOnRails', 'HTML5', 'CSS3', 'JavaScript', 'jQuery&UI', 'Admin'].each do |skill|
-            %li{:id => skill}
-              .top
-                %img{:src => "img/icons/#{skill}.png", }
-              .bottom
-                .infobox
-                  %h3=skill
-                  %p=rand(100)
+        %ul#skills-list
+          - YAML::load( File.open 'data/skills.yml' ).each do |skill, rating|
+            %li{:class => "karate_#{rating}" }= skill.gsub(' ', '&nbsp;')
 
     %section#achievements
       .container
