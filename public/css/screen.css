@@ -167,7 +167,7 @@ body .container {
     font-family: Rochester, Georgia, serif; }
   body .container .dark {
     color: #555555;
-    text-shadow: 1px 2px 5px rgba(10, 10, 10, 0.7); }
+    text-shadow: 1px 2px 5px rgba(170, 170, 170, 0.8); }
   body .container .pink {
     color: #ff3452;
     text-shadow: 1px 2px 5px #0099cc; }
@@ -191,14 +191,14 @@ body .container {
     color: #e50d00; }
   body .container .karate_9 {
     color: black; }
-body header, body footer, body #projects, body #photography, body #skills, body #personal {
+body header, body footer, body #projects, body #photography, body #skills, body #personal, body #achievements {
   border-bottom: 1px solid black;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5) inset, 0 0 300px black inset;
   width: 100%; }
-body #footer h1, body #footer h2, body #footer h3, body #projects h1, body #projects h2, body #projects h3, body #skills h1, body #skills h2, body #skills h3 {
+body #projects h1, body #projects h2, body #projects h3, body #skills h1, body #skills h2, body #skills h3 {
   text-shadow: 1px 1px 3px #ff677d;
   color: #005a86; }
-body #footer h1:hover, body #footer h2:hover, body #footer h3:hover, body #projects h1:hover, body #projects h2:hover, body #projects h3:hover, body #skills h1:hover, body #skills h2:hover, body #skills h3:hover {
+body #projects h1:hover, body #projects h2:hover, body #projects h3:hover, body #skills h1:hover, body #skills h2:hover, body #skills h3:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -218,9 +218,9 @@ body #skills {
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
   body #skills h1 {
-    color: #ff3452;
+    color: rgba(170, 170, 170, 0.8);
     text-shadow: 1px 1px 2px #eeeeee; }
   body #skills #skills-list {
     line-height: 2.2em; }
@@ -246,15 +246,25 @@ body #skills {
 body header {
   background: white;
   background-image: url("./img/bg-header.gif");
-  background-position: 12px 21px; }
+  background-position: 12px 21px;
+  position: relative; }
   body header .container {
     width: 950px;
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
+  body header #face {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    float: left;
+    margin-left: 35px;
+    width: 120px;
+    height: 120px; }
   body header h1 {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding-left: 140px; }
   body header ol {
     background-color: rgba(255, 255, 255, 0.3);
     list-style-type: none;
@@ -269,6 +279,10 @@ body header {
       padding-left: 15px;
       position: relative;
       top: -14px; }
+      body header ol li a strong {
+        color: #ff3452; }
+        body header ol li a strong:hover {
+          color: #6b56d2; }
     body header ol li:last-child {
       height: 59px; }
 body #projects {
@@ -279,7 +293,7 @@ body #projects {
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
   body #projects #tagline h1 {
     border-right: 2px dashed white;
     float: left;
@@ -299,7 +313,7 @@ body #achievements {
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
 body #photography {
   background: white;
   background-image: url("./img/bg-photography.jpg"); }
@@ -308,14 +322,27 @@ body #photography {
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
 body footer {
   background: white;
   background-image: url("./img/bg-footer.jpg");
-  padding: 0; }
+  text-align: center; }
   body footer .container {
     width: 950px;
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;
-    min-height: 1000px; }
+    min-height: 850px; }
+  body footer h1 {
+    text-align: left; }
+  body footer #links {
+    margin: 0 auto; }
+    body footer #links a {
+      color: #ff3452;
+      display: inline-block;
+      font-size: 2em;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      margin: 100px 10px; }
+      body footer #links a:hover {
+        color: rgba(107, 86, 210, 0.3); }
