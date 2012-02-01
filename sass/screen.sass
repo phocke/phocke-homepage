@@ -40,7 +40,7 @@ $gray-lighter: #fefefe
 $gray-dark: #555
 
 $whiteish: rgba(255,255,255,0.7)
-$grayish: rgba(10,10,10,0.7)
+$grayish: rgba(170,170,170,0.8)
 $white: white
 
 $karate_1: white
@@ -121,12 +121,12 @@ body
     .karate_9
       color: $karate_9
 
-  header, footer, #projects, #photography, #skills, #personal
+  header, footer, #projects, #photography, #skills, #personal, #achievements
     border-bottom: 1px solid black
     box-shadow: 0 10px 12px rgba(0,0,0,0.5) inset, 0 0 300px rgba(0,0,0,1) inset
     width: 100%
   
-  #footer, #projects, #skills
+  #projects, #skills
     h1,h2,h3
       text-shadow: 1px 1px 3px lighten($pink-dark, 10%)
       color: lighten(saturate($blue-navy, 10%), 5%)
@@ -148,7 +148,7 @@ body
     +wide-background('./img/dark-grey.png')
 
     h1
-      color: $pink-dark
+      color: $grayish
       text-shadow: 1px 1px 2px #eee
 
     #skills-list
@@ -177,8 +177,18 @@ body
   header
     +wide-background('./img/bg-header.gif')
     background-position: 12px 21px
+    position: relative
+    #face
+      position: absolute
+      top: 30px
+      left: 150px
+      float: left
+      margin-left: 35px
+      width: 120px
+      height: 120px
     h1
       margin-top: 30px
+      padding-left: 140px
     ol
       background-color: rgba(255,255,255,0.3)
       list-style-type: none
@@ -193,6 +203,10 @@ body
         padding-left: 15px
         position: relative
         top: -14px
+        a strong
+          color: $pink-dark
+          &:hover
+            color: $violet-moderate-opaque
       li:last-child
         height: 59px
 
@@ -216,4 +230,17 @@ body
     +wide-background('./img/bg-photography.jpg')
   footer
     +wide-background('./img/bg-footer.jpg')
-    padding: 0
+    text-align: center
+    h1
+      text-align: left
+    #links
+      margin: 0 auto
+      a
+        color: $pink-dark
+        display: inline-block
+        font-size: 2em
+        background-color: rgba(0,0,0,0.3)
+        padding: 10px
+        margin: 100px 10px
+        &:hover
+          color: $violet-moderate

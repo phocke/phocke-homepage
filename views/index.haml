@@ -23,13 +23,14 @@
   %body
     %header
       .container
+        %img#face{:src => 'img/przemek-hocke.png'}
         %h1.dark.cursive.title Hello dear visitor!
         %ol
-          %li Make yourself at home please.
-          %li And tell me please what you're looking for?
-          %li Would like like to know about <a href="#projects"><strong>amazing projects</strong></a> I did?
-          %li Or maybe you'd rather read about <a href="#skills"><strong>my skills</strong></a>?
-          %li Also - <a href="#achievements"><strong>my greatest achievements</strong></a>.
+          %li Tell me please what you're looking for?
+          %li Would like like to read about <a href="#projects"><strong>amazing projects</strong></a> I did?
+          %li Or maybe you'd rather check <a href="#skills"><strong>my skills</strong></a>?
+          %li Also few words about<a href="#achievements"><strong>my greatest achievements</strong></a>.
+          %li And a few ways <a href="#footer"><strong>to get in touch</strong></a> quickly.
     
     %section#projects
       .container
@@ -74,7 +75,7 @@
 
     %section#skills
       .container
-        %h1.dark.title My skills and how do I rate them:
+        %h1.dark.cursive My skills and how do I rate them:
         
         #legend
           -(1..9).each do |rating|
@@ -102,6 +103,16 @@
           .description  Back in highschool I really didn't like programming that much. <a href="https://github.com/phocke" target="_blank">My github</a>
           %h2.pink First aid certificate
           .description No links here. It happend back during my scout years. It took 3 days and pass rate was about 30%. I was really proud of myself!
+
+    %footer#footer
+      .container
+        %h1 Ways to get in touch:
+        #links
+          %a{:href => 'mailto:phocke@gmail.com'} Email
+          %a{:href => 'http://github.com/phocke'} GitHub
+          %a{:href => 'http://phocke.tumblr.com/'} Tumblr
+
+
 
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"}
